@@ -1,0 +1,99 @@
+$purple: #8675AA ;
+$darkpurple: #808193;
+$white: #F6F5F4 ;
+$lightgray: #828696 ;
+$darkgray: #403F49 ;
+$black: #26252B ;
+$red: #A0506B ;
+$orange: #C97769 ;
+$green: #3fc380;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: transparent;
+    overflow:hidden;
+    border: 2px solid rgba(255,255,255, 0.6);
+    //border-radius: 15px;
+
+
+}
+body {
+    background: url('./images/los-santos-gta-v-city-view-92.jpg');
+    height: 94vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 15px;
+}
+.app-wrapper {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+.logo {
+    position: relative;
+    top: 90px;
+    background: url('./images/style-logo.png');
+    width: 300px;
+    height: 90px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.connect-wrapper {
+    width: 400px;
+    margin: auto;
+
+    .info-wrap {
+        display: none;
+        color: $white;
+        font-size: 18px;
+        font-weight: 100;
+        background-color: rgba(0,0,0, 0.6);
+        padding: 10px;
+        border-radius: 3px;
+        text-align: center;
+        width: 300px;
+        margin: auto;
+        p {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            .status-good {
+                color: $green;
+                font-weight: bold;
+            }
+            .status-bad {
+                color: $orange;
+                font-weight: bold;
+            }
+        }
+    }
+    .join-btn {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: block;
+        width: 100%;
+        background: $darkpurple;
+        padding: 10px 20px;
+        border: 1px solid $darkpurple;
+        color: $white;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            cursor: pointer;
+            background: $red;
+            border: 1px solid $red;
+            color: $white;
+        }
+    }
+}
+
+
+
